@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>myCodeCamp Survey Form</h1>
+        <p><em>Thank you for taking the time to help us improve the platform</em></p>
+    </header>
+    
+    <main>
+        <div class="container">
+            <form action="/action_page.php">
+                <div>
+                    <label for="fullName" name="biodata">Name</label><br>
+                    <input type="text" id="fullName" name="biodata" placeholder="Enter your name"><br><br>
+                </div>
+                <div>
+                    <label for="email" name="biodata">Email</label><br>
+                    <input type="email" id="email" name="biodata" placeholder="yourmail@example.com"
+                    class="other-style-inputs"><br><br>
+                </div>
+                <div>
+                    <label for="age" name="biodata">Age (optional)</label><br>
+                    <input type="number" id="age" name="biodata" min="10" max="95" placeholder="Enter your age" 
+                    class="other-style-inputs"><br><br>
+                </div>
+                <div>
+                    <label for="current-role" name="biodata">Which option best describes your current role?</label><br>
+                    <select id="current-role" name="biodata" class="style-inputs">
+                        <option value="student">student</option>
+                        <option value="full time job">full time job</option>
+                        <option value="full time learner">full time learner</option>
+                        <option value="prefer not to say">prefer not to say</option>
+                        <option value="other">other</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="recommend">Would you recommend myCodeCamp to a friend?<br>
+                        <input type="radio" id="maybe" name="recommend" value="maybe">
+                        <label for="maybe" name="recommend">Maybe</label><br>
+                        <input type="radio" id="definitely" name="recommend" value="definitely">
+                        <label for="definitely" name="recommend">Definitely</label><br>
+                        <input type="radio" id="not sure" name="recommend" value="not sure">
+                        <label for="not sure" name="recommend">Not sure</label><br></label>
+                </div>
+                <div>
+                    <label for="fav-feature" name="fav-feature">What is your favourite feature of myCodeCamp?</label><br>
+                    <select id="current-role" name="biodata" class="style-inputs">
+                        <option value="projects">projects</option>
+                        <option value="challenges">challenges</option>
+                        <option value="Community">Community</option>
+                        <option value="open-source">open-source</option>
+                        <option value="curriculum">curriculum</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="improve">What would you like see improved? (check all that applies)<br>
+                        <input type="checkbox" id="front-end projects" name="improve" value="front-end projects">
+                        <label for="front-end projects" name="improve">Front-end projects</label><br>
+                        <input type="checkbox" id="back-end projects" name="improve" value="back-end projects">
+                        <label for="back-end projects" name="improve">Back-end projects</label><br>
+                        <input type="checkbox" id="data visualization" name="improve" value="data visualization">
+                        <label for="data visualization" name="improve">Data visualization</label><br>
+                        <input type="checkbox" id="challenges" name="improve" value="challenges">
+                        <label for="challenges" name="improve">Challenges</label><br>
+                        <input type="checkbox" id="open source" name="improve" value="open source">
+                        <label for="open source" name="improve">Open source Community</label><br>
+                        <input type="checkbox" id="videos" name="improve" value="videos">
+                       <label for="videos" name="improve">Videos</label><br>
+                       <input type="checkbox" id="additional courses" name="improve" value="additional courses">
+                       <label for="additional courses" name="improve">Additional courses</label><br>
+                       <input type="checkbox" id="city meetups" name="improve" value="city meetups">
+                       <label for="city meetups" name="improve">City meetups</label><br>
+                    </label>
+                </div>
+                <div>
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea id="comments" name="comments" placeholder="Please enter your comment here.."></textarea><br><br>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" id="submit"> 
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
